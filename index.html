@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  
+    <div class="navbar">
+        <a href="#Contact Us">Contact Us</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Services">Services</a>
+        <a href="#Home">Home</a>
+    </div>
+
+    <div>
+    <img class="Slides" src="./img//table-deco.jpeg" style="width:100%">
+    <img class="Slides" src="./img/wedding-table.jpeg" style="width:100%">
+    <img class="Slides" src="./img/event-beach.jpeg" style="width:100%">
+    </div>
+
+
+    <div class="grid-container">
+      <div>
+        <h3>Birthday</h3>
+        <img class="service" src="./img/Birthday.jpeg" alt="">
+        <p>You want to plan a Birthparty? No problem at all. Our dedicated team will assist you with each step of the planing and will make sure that we make your day special.</p>
+        <button class="button" type="button" onclick="alert('Hello world!')">Read More</button>
+      </div>
+  <div>
+    <h3>Anniversary</h3>
+    <img class="service" src="./img/anniversary.jpeg" alt="">
+    <p>You want to plan a Birthparty? No problem at all. Our dedicated team will assist you with each step of the planing and will make sure that we make your day special.</p>
+    <button class="button" type="button" onclick="alert('Hello world!')">Read More</button>
+  </div>
+  <div>
+    <h3>Wedding</h3>
+    <img class="service" src="./img/wedding.jpeg" alt="">
+    <p>You want to plan a Birthparty? No problem at all. Our dedicated team will assist you with each step of the planing and will make sure that we make your day special.</p>
+    <button class="button" type="button" onclick="alert('Hello world!')">Read More</button>
+  </div>  
+    </div>
+  
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("Slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 10 seconds
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(238, 226, 238);
+    margin:0px;
+}
+
+.navbar {
+    background-color: blueviolet;
+    position: fixed;
+    width: 100%; 
+}
+
+
+h1 {
+  font-size: 5rem;
+  margin: 7rem 1.25rem 2.5rem 1.25rem;
+}
+p {
+  font-size: 1.5rem;
+  margin: 0 1.25rem 5rem 1.25rem;
+}
+
+.navbar a {
+    float: right;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    padding-left: 1em;
+    text-decoration: none;
+    font-size: 27px;
+    padding-right: 2em;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    background-color:rgb(226, 55, 32), 161, 165;
+    padding: 10px;
+  }
+  .grid-container div {
+    background-color:rgba(241, 239, 238, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+
+  .Slides {
+    width: 20%;
+    display: block;
+    padding-top: 0%;
+    height: 20%;
+  }
+
+  .service {
+    border-radius: 50%;
+    height: 30%;
+    width: 50%;
+  }
+
+  .button {
+    background-color: rgb(13, 151, 66);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .logo {
+    background-color: violet;
+    height: 5em;
+    width: 5em;
+  
+  }
+  
